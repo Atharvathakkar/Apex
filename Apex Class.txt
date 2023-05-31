@@ -1,0 +1,53 @@
+public class Calculator4 {
+
+public Integer a { get; set; }
+
+public Integer b { get; set; }
+
+public Integer c { get; set; }
+
+ 
+
+public void addition() {
+
+c = a + b;
+
+}
+
+ 
+
+public void subtraction() {
+
+c = a - b;
+
+}
+
+ 
+
+public void multiplication() {
+
+c = a * b;
+
+}
+
+ 
+
+public void division() {
+
+try {
+
+c = a / b;
+
+} catch (Exception e) {
+
+// Handle division by zero exception
+
+System.debug('An error occurred: ' + e.getMessage());
+
+// You can choose to set c to a default value or handle the error differently based on your requirements
+
+}
+
+}
+
+}

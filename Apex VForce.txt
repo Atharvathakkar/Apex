@@ -1,0 +1,44 @@
+<apex:page controller="Calculator4">
+
+<apex:sectionHeader title="Basic Calculator" subtitle="Simple calculator"/>
+
+<apex:form >
+
+<apex:pageBlock title="Simple calculator">
+
+<apex:pageBlockButtons location="bottom">
+
+<apex:commandButton value="addition" action="{!addition}" reRender="res"/>
+
+<apex:commandButton value="subtraction" action="{!subtraction}" reRender="res"/>
+
+<apex:commandButton value="division" action="{!division}" reRender="res"/>
+
+<apex:commandButton value="multiplication" action="{!multiplication}" reRender="res"/>
+
+</apex:pageBlockButtons>
+
+<apex:pageBlockSection title="Calculator">
+
+<apex:inputText label="Enter the First Number" html-placeholder="First Number" value="{!a}"/>
+
+<apex:inputText label="Enter the Second Number" html-placeholder="Second Number" value="{!b}"/>
+
+<apex:outputText label="Result" value="{!c}" id="res">
+
+</apex:outputText>
+
+
+</apex:pageBlockSection>
+
+
+
+</apex:pageBlock>
+
+
+
+
+</apex:form>
+
+
+</apex:page>
